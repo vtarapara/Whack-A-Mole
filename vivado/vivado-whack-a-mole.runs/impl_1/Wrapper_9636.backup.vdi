@@ -1,0 +1,1895 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Apr 18 13:17:10 2024
+# Process ID: 9636
+# Current directory: C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1
+# Command line: vivado.exe -log Wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Wrapper.tcl -notrace
+# Log file: C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper.vdi
+# Journal file: C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Wrapper.tcl -notrace
+Command: link_design -top Wrapper -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.070 . Memory (MB): peak = 1328.973 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 38 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [C:/Users/ah632/ece350/whack-a-mole/master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [C:/Users/ah632/ece350/whack-a-mole/master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ah632/ece350/whack-a-mole/master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL_CLK'. [C:/Users/ah632/ece350/whack-a-mole/master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ah632/ece350/whack-a-mole/master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/ah632/ece350/whack-a-mole/master.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1328.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.723 . Memory (MB): peak = 1328.973 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 27d548cb3
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1666.941 ; gain = 337.969
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 19546b435
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 1 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 19bbb44a3
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.219 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 31 cells and removed 62 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 1044e5851
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.315 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 16 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 1044e5851
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.365 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 1044e5851
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.374 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 1b9810701
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.387 . Memory (MB): peak = 1888.695 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               1  |                                              0  |
+|  Constant propagation         |              31  |              62  |                                              0  |
+|  Sweep                        |              16  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1888.695 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 13c77b2bd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.425 . Memory (MB): peak = 1888.695 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 13c77b2bd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 13c77b2bd
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.934 . Memory (MB): peak = 2008.352 ; gain = 119.656
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 13c77b2bd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 13c77b2bd
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+29 Infos, 2 Warnings, 2 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 2008.352 ; gain = 679.379
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.028 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Wrapper_drc_opted.rpt -pb Wrapper_drc_opted.pb -rpx Wrapper_drc_opted.rpx
+Command: report_drc -file Wrapper_drc_opted.rpt -pb Wrapper_drc_opted.pb -rpx Wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[10] (net: InstMem/sel[7]) which is driven by a register (CPU/pc_register/dff7/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[11] (net: InstMem/sel[8]) which is driven by a register (CPU/pc_register/dff8/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[12] (net: InstMem/sel[9]) which is driven by a register (CPU/pc_register/dff9/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[13] (net: InstMem/sel[10]) which is driven by a register (CPU/pc_register/dff10/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[14] (net: InstMem/sel[11]) which is driven by a register (CPU/pc_register/dff11/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[3] (net: InstMem/sel[0]) which is driven by a register (CPU/pc_register/dff/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[4] (net: InstMem/sel[1]) which is driven by a register (CPU/pc_register/dff1/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[5] (net: InstMem/sel[2]) which is driven by a register (CPU/pc_register/dff2/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[6] (net: InstMem/sel[3]) which is driven by a register (CPU/pc_register/dff3/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[7] (net: InstMem/sel[4]) which is driven by a register (CPU/pc_register/dff4/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[8] (net: InstMem/sel[5]) which is driven by a register (CPU/pc_register/dff5/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 InstMem/dataOut_reg_0 has an input control pin InstMem/dataOut_reg_0/ADDRARDADDR[9] (net: InstMem/sel[6]) which is driven by a register (CPU/pc_register/dff6/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[10] (net: ProcMem/address_dmem[7]) which is driven by a register (CPU/xm_latch/dff71/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[11] (net: ProcMem/address_dmem[8]) which is driven by a register (CPU/xm_latch/dff72/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[12] (net: ProcMem/address_dmem[9]) which is driven by a register (CPU/xm_latch/dff73/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[13] (net: ProcMem/address_dmem[10]) which is driven by a register (CPU/xm_latch/dff74/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[14] (net: ProcMem/address_dmem[11]) which is driven by a register (CPU/xm_latch/dff75/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[7] (net: ProcMem/address_dmem[4]) which is driven by a register (CPU/xm_latch/dff68/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[8] (net: ProcMem/address_dmem[5]) which is driven by a register (CPU/xm_latch/dff69/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 ProcMem/MemoryArray_reg_0 has an input control pin ProcMem/MemoryArray_reg_0/ADDRARDADDR[9] (net: ProcMem/address_dmem[6]) which is driven by a register (CPU/xm_latch/dff70/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[10] (net: InstMem/sel[8]) which is driven by a register (CPU/pc_register/dff8/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[11] (net: InstMem/sel[9]) which is driven by a register (CPU/pc_register/dff9/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[12] (net: InstMem/sel[10]) which is driven by a register (CPU/pc_register/dff10/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[13] (net: InstMem/sel[11]) which is driven by a register (CPU/pc_register/dff11/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[2] (net: InstMem/sel[0]) which is driven by a register (CPU/pc_register/dff/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[3] (net: InstMem/sel[1]) which is driven by a register (CPU/pc_register/dff1/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[4] (net: InstMem/sel[2]) which is driven by a register (CPU/pc_register/dff2/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[5] (net: InstMem/sel[3]) which is driven by a register (CPU/pc_register/dff3/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[6] (net: InstMem/sel[4]) which is driven by a register (CPU/pc_register/dff4/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[7] (net: InstMem/sel[5]) which is driven by a register (CPU/pc_register/dff5/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[8] (net: InstMem/sel[6]) which is driven by a register (CPU/pc_register/dff6/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 InstMem/dataOut_reg_1 has an input control pin InstMem/dataOut_reg_1/ADDRARDADDR[9] (net: InstMem/sel[7]) which is driven by a register (CPU/pc_register/dff7/q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 33 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d49daf4a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 10e0ac93f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.320 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1cf1eac30
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.775 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1cf1eac30
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.779 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 1cf1eac30
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.787 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1b4e6792b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.987 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 18aa8db1b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 18aa8db1b
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 183 LUTNM shape to break, 169 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 43, two critical 140, total 183, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 260 nets or LUTs. Breaked 183 LUTs, combined 77 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-46] Identified 12 candidate nets for critical-cell optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 19 new instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 19 new cells, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |          183  |             77  |                   260  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Cell                                    |           19  |              0  |                     0  |           0  |           1  |  00:00:01  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |          202  |             77  |                   260  |           0  |          10  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: 149582aed
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 2.4 Global Placement Core | Checksum: 199293064
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 199293064
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:06 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 134517566
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: ca4f0c17
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 156354fc9
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 108610b7a
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 6aed9356
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:10 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: f4f8897c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 1678bc38c
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 1151fffdb
+
+Time (s): cpu = 00:00:17 ; elapsed = 00:00:11 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 1bd1d9ff3
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 1bd1d9ff3
+
+Time (s): cpu = 00:00:24 ; elapsed = 00:00:19 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 16e16d7f3
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-14.367 | TNS=-6917.412 |
+Phase 1 Physical Synthesis Initialization | Checksum: 168c3c44d
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.090 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Place 46-33] Processed net RegisterFile/register31/dff31/BT_RESET, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 18ced7f12
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.179 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 16e16d7f3
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-12.160. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 10d0be9b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 10d0be9b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 10d0be9b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                4x4|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 10d0be9b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: 10d0be9b2
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 8428cc1f
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Ending Placer Task | Checksum: 47267936
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:27 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+75 Infos, 35 Warnings, 2 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:28 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.261 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file Wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file Wrapper_utilization_placed.rpt -pb Wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 1.00s |  WALL: 0.43s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.160 | TNS=-6806.419 |
+Phase 1 Physical Synthesis Initialization | Checksum: 199251802
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.318 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.160 | TNS=-6806.419 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 199251802
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.327 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.160 | TNS=-6806.419 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff74/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_1' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff7/q_reg_0.  Did not re-place instance CPU/multdiv_unit/store_div/dff7/q_i_11__23
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff7/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff7/q_reg_0. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff7/q_i_11__23_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.160 | TNS=-6806.161 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff75/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff14/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_2.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__24
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_2. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_9__24_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.075 | TNS=-6805.954 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff72/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff11/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff4/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff4/q_i_9__23
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff4/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_0.  Did not re-place instance CPU/multdiv_unit/store_div/dff3/q_i_8__42
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff4/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff4/q_i_9__23_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.045 | TNS=-6805.528 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff86/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff20/neg_quotient[0].  Did not re-place instance CPU/multdiv_unit/store_div/dff20/q_i_10__21
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff20/neg_quotient[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff20/neg_quotient[0]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff20/q_i_10__21_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.009 | TNS=-6805.345 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff90/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff23/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff23/q_i_11__25
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff23/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff23/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff23/q_i_11__25_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-12.003 | TNS=-6804.869 |
+INFO: [Physopt 32-663] Processed net CPU/xm_latch/dff70/q_reg_0.  Re-placed instance CPU/xm_latch/dff70/q_reg
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff70/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.983 | TNS=-6804.642 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff78/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff17/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_5.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__27
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_5. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_9__27_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.967 | TNS=-6804.230 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff73/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/latch_operand/q_i_2__68_n_0.  Did not re-place instance CPU/multdiv_unit/latch_operand/q_i_2__68
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/latch_operand/write_xm_latch[2]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/latch_operand/q_i_1__234_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/latch_operand/q_i_2__68_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.928 | TNS=-6803.294 |
+INFO: [Physopt 32-663] Processed net CPU/xm_latch/dff66/q_reg_0.  Re-placed instance CPU/xm_latch/dff66/q_reg
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff66/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.921 | TNS=-6802.988 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff95/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff22/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff22/q_i_11__30
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff22/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff22/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff22/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff22/q_i_11__30_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.911 | TNS=-6802.733 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff80/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__10_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/multdiv_unit/store_div/dff8/q_reg_1.  Re-placed instance CPU/multdiv_unit/store_div/dff8/q_i_11__33
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff8/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.906 | TNS=-6802.673 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff71/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff10/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff3/q_i_9__22
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_0.  Did not re-place instance CPU/multdiv_unit/store_div/dff3/q_i_8__42
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff3/q_i_9__22_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.903 | TNS=-6802.319 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff83/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__16_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/latch_operand/multdiv_output[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff15/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff15/q_i_11__24
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff15/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff15/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff15/q_i_11__24_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.893 | TNS=-6802.083 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff76/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__5_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff15/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_3.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__25
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_3. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_9__25_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.867 | TNS=-6801.784 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff79/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff18/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__28
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_8__41_comp_8.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.852 | TNS=-6798.164 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_2. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_9__24_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.838 | TNS=-6798.110 |
+INFO: [Physopt 32-663] Processed net CPU/xm_latch/dff64/q_reg_0.  Re-placed instance CPU/xm_latch/dff64/q_reg
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff64/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.819 | TNS=-6797.618 |
+INFO: [Physopt 32-663] Processed net CPU/xm_latch/dff65/q_reg_0.  Re-placed instance CPU/xm_latch/dff65/q_reg
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff65/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.798 | TNS=-6797.125 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff22/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff22/q_i_11__30_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.785 | TNS=-6796.383 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff20/neg_quotient[0]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff20/q_i_10__21_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.771 | TNS=-6795.935 |
+INFO: [Physopt 32-663] Processed net CPU/xm_latch/dff70/q_reg_0.  Re-placed instance CPU/xm_latch/dff70/q_reg
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff70/q_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.746 | TNS=-6795.669 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff67/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff5/q_i_2__64_n_0.  Did not re-place instance CPU/dx_latch/dff5/q_i_2__64
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff5/write_xm_latch[0]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff5/q_i_1__228_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff5/q_i_2__64_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.745 | TNS=-6794.759 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff69/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/latch_operand/q_i_2__66_n_0.  Did not re-place instance CPU/multdiv_unit/latch_operand/q_i_2__66
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/latch_operand/write_xm_latch[0]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/latch_operand/q_i_1__230_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/latch_operand/q_i_2__66_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.731 | TNS=-6793.878 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff7/q_reg_0. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff7/q_i_11__23_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.717 | TNS=-6793.824 |
+INFO: [Physopt 32-702] Processed net CPU/xm_status_latch/dff/out_wire[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11.  Re-placed instance CPU/multdiv_unit/store_booths/dff/q_i_5__36
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.708 | TNS=-6793.762 |
+INFO: [Physopt 32-702] Processed net CPU/pc_register/dff9/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_6__81_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__81
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/new_program_counter[9]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__112_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.708 | TNS=-6793.944 |
+INFO: [Physopt 32-702] Processed net CPU/pc_register/dff11/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_6__81_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__81
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.695 | TNS=-6790.871 |
+INFO: [Physopt 32-702] Processed net CPU/xm_status_latch/dff2/out_wire[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11.  Did not re-place instance CPU/multdiv_unit/store_booths/dff/q_i_5__36
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/count/dff5/write_xm_status_latch[1]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/count/dff5/q_i_1__350_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.666 | TNS=-6790.829 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff94/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff6/q_reg_1[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_27.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__18
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_27. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_17__3
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_reg_27. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_8__18_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.652 | TNS=-6790.578 |
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN.  Did not re-place instance CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/count/dff5/write_xm_status_latch[1]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/count/dff5/q_i_1__350_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.647 | TNS=-6790.441 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32_repN_1.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26_comp_1
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_2. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff6/q_i_9__24_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.646 | TNS=-6790.348 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/final_RQ[0].  Did not re-place instance CPU/dx_latch/dff29/q_i_10__20
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff4/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff4/q_i_9__23_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/final_RQ[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.637 | TNS=-6790.102 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_32.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__26
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff15/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff15/q_i_11__24_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_32. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.637 | TNS=-6789.851 |
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff66/q_reg_0.  Did not re-place instance CPU/xm_latch/dff66/q_reg
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff66/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff27/q_i_2__63_n_0.  Re-placed instance CPU/dx_latch/dff27/q_i_2__63
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_2__63_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.612 | TNS=-6789.821 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_6__81_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__81
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__11_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__11
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_6__81_comp_2.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_12__11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.607 | TNS=-6780.198 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_2__63_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__63
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/write_xm_latch[0]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_1__227_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_2__63_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.594 | TNS=-6779.382 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff93/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff6/q_reg_1[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_25.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__15
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_25. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_17__3
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_reg_25. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_8__15_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.580 | TNS=-6779.158 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_18__8
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_18__8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.557 | TNS=-6776.977 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff92/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff6/q_reg_1[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_26.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__17
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_26. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_17__3
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.557 | TNS=-6776.840 |
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_29[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff29/q_i_8__21_n_0.  Re-placed instance CPU/dx_latch/dff29/q_i_8__21
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_8__21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.549 | TNS=-6776.831 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_8__21_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__21
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_8__21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__6_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__6
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_6__6_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_9__7_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_9__7
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_6__6_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_6__6_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_9__7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.532 | TNS=-6776.472 |
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11.  Did not re-place instance CPU/multdiv_unit/store_booths/dff/q_i_5__36
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/count/dff5/write_xm_status_latch[0]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/count/dff5/q_i_1__136_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.515 | TNS=-6776.442 |
+INFO: [Physopt 32-663] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN.  Re-placed instance CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp_1
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.514 | TNS=-6776.219 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff70/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/latch_operand/q_i_2__67_n_0.  Did not re-place instance CPU/multdiv_unit/latch_operand/q_i_2__67
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/latch_operand/write_xm_latch[1]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/latch_operand/q_i_1__231_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/latch_operand/q_i_2__67_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.502 | TNS=-6775.289 |
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff29/q_reg_121.  Re-placed instance CPU/dx_latch/dff29/q_i_2__69
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_121. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.501 | TNS=-6775.288 |
+INFO: [Physopt 32-663] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11.  Re-placed instance CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.496 | TNS=-6775.283 |
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11.  Did not re-place instance CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/count/dff5/write_xm_status_latch[0]. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/count/dff5/q_i_1__136_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.489 | TNS=-6775.233 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/final_RQ[0].  Did not re-place instance CPU/dx_latch/dff29/q_i_10__20
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_div/dff3/q_reg_1. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_div/dff3/q_i_9__22_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/final_RQ[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.472 | TNS=-6775.017 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_18__8
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_18__8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_22__8_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_21__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_22__8_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_25__1
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.447 | TNS=-6773.688 |
+INFO: [Physopt 32-663] Processed net CPU/multdiv_unit/store_booths/dff34/q_reg_2.  Re-placed instance CPU/multdiv_unit/store_booths/dff34/q_i_15__13
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff34/q_reg_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.426 | TNS=-6773.611 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0_repN_4.  Did not re-place instance CPU/dx_latch/dff29/q_i_17__3_replica
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0_repN_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.405 | TNS=-6773.429 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.391 | TNS=-6773.088 |
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff24/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__83_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__83
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_reg_55. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__146_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.388 | TNS=-6773.228 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_20__6_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_20__6
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_20__6_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_24__2_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_24__2
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_20__6_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_20__6_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_24__2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.383 | TNS=-6773.128 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_41_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_41
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_41_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_41_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.371 | TNS=-6772.868 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_121.  Did not re-place instance CPU/dx_latch/dff29/q_i_2__69
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_reg_121. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.370 | TNS=-6772.833 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_11__22_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_11__22
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_11__22_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_11__22_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_19__14_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_19__14
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_11__22_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_11__22_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_19__14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.363 | TNS=-6772.744 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_80__0
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_80__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/post_shift_div[2].  Did not re-place instance CPU/dx_latch/dff27/q_i_1__25
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/post_shift_div[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/post_shift_div[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_reg_17 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_17.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__58
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__24
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.359 | TNS=-6772.513 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__24
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_11__19
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_11__19_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__172
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.357 | TNS=-6772.445 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_8__38_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__38
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_8__38_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_8__38_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.353 | TNS=-6771.695 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__172
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__46_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__31
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_6__31_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__63_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__63
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__63_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__36_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_8__36
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__36_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__36_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_3 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_3.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__106
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_reg_3. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.336 | TNS=-6771.037 |
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff34/q_reg_2.  Did not re-place instance CPU/multdiv_unit/store_booths/dff34/q_i_15__13
+INFO: [Physopt 32-81] Processed net CPU/multdiv_unit/store_booths/dff34/q_reg_2. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff34/q_reg_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.330 | TNS=-6770.972 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__104
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__104_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_5 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_5.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__99
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_5 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.317 | TNS=-6770.554 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_4 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_4.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__100
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_reg_4. Replicated 3 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.298 | TNS=-6769.524 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_15__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_15__3
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_15__3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_15__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.293 | TNS=-6768.628 |
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN.  Did not re-place instance CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp_1
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_booths/dff55/q_reg_4.  Did not re-place instance CPU/multdiv_unit/store_booths/dff55/q_i_14__18
+INFO: [Physopt 32-710] Processed net CPU/multdiv_unit/store_booths/dff/q_reg_11_repN. Critical path length was reduced through logic transformation on cell CPU/multdiv_unit/store_booths/dff/q_i_5__36_comp.
+INFO: [Physopt 32-735] Processed net CPU/multdiv_unit/store_booths/dff55/q_reg_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.277 | TNS=-6768.552 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_5 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_5.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__99
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_reg_5. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.270 | TNS=-6780.400 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_14__5_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_14__5
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_14__5_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_14__5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.268 | TNS=-6777.615 |
+INFO: [Physopt 32-662] Processed net CPU/mw_latch/dff64/q_reg_2.  Did not re-place instance CPU/mw_latch/dff64/q_i_6__90
+INFO: [Physopt 32-572] Net CPU/mw_latch/dff64/q_reg_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/mw_latch/dff64/q_reg_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_4__113
+INFO: [Physopt 32-710] Processed net CPU/mw_latch/dff64/q_reg_2. Critical path length was reduced through logic transformation on cell CPU/mw_latch/dff64/q_i_6__90_comp.
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.264 | TNS=-6793.603 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_121.  Did not re-place instance CPU/dx_latch/dff29/q_i_2__69
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_121. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/execute_overflow. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_20__2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_17__3
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_17__3_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.258 | TNS=-6793.050 |
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff22/q_reg_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__83_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__83
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_reg_56. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__148_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.236 | TNS=-6793.276 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_10 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_10.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__103
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_reg_10. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_10. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.230 | TNS=-6792.451 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0_repN_1.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__81_comp_1
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/new_program_counter[9]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__112_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_6__81_n_0_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.212 | TNS=-6792.211 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_5__27_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_5__27
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff29/q_i_5__27_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_5__27_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.211 | TNS=-6792.162 |
+INFO: [Physopt 32-702] Processed net CPU/pc_register/dff31/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0.  Re-placed instance CPU/dx_latch/dff29/q_i_4__75
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.210 | TNS=-6792.054 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_29 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_29.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__101
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_reg_29. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_29. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.206 | TNS=-6792.349 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_3 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_3.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__106
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_i_8__36_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_8__36_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.204 | TNS=-6792.311 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_5__27_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_5__27
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_5__27_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.203 | TNS=-6792.284 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_9__17_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_9__17
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_9__17_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_9__17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_4__158_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_3__65
+INFO: [Physopt 32-134] Processed net CPU/dx_latch/dff27/q_i_4__158_0. Rewiring did not optimize the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_4__158_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_4__158_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__46_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_8__46
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__46_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__46_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_9__51_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_9__51
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_i_8__46_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_8__46_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_9__51_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.193 | TNS=-6791.945 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_4__75
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/new_program_counter[31]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__115_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.191 | TNS=-6792.084 |
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff91/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__23_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_29[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_8__20_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_8__20
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_8__20_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff29/q_i_12__14_n_0.  Re-placed instance CPU/dx_latch/dff29/q_i_12__14
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_12__14_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.190 | TNS=-6792.076 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_1' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[13]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff27/q_i_12__23_n_0.  Re-placed instance CPU/dx_latch/dff27/q_i_12__23
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_12__23_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.188 | TNS=-6792.022 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_1' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[15]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_5__28_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_5__28
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_5__28_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.187 | TNS=-6791.887 |
+INFO: [Physopt 32-702] Processed net CPU/pc_register/dff26/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_4__75
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/new_program_counter[26]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__120_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.183 | TNS=-6792.098 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_reg_21 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_21.  Did not re-place instance CPU/dx_latch/dff29/q_i_2__55
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_reg_21 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_21. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_22 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_22.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__25
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_reg_21. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_2__55_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_22. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.183 | TNS=-6791.772 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_15__3_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_15__3
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_15__3_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_15__3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_19__5_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_19__5
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_15__3_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_15__3_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_19__5_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.174 | TNS=-6788.825 |
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff71/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__83_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__83
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_3__83_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__11_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__11
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_12__11_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_28_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_28
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_12__11_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_12__11_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_28_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.166 | TNS=-6770.141 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_3__76_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_3__76_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_3__76
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_3__76_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_3__76_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__105_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__105
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__105_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__105_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__97
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.166 | TNS=-6770.568 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_5__28_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_5__28
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_5__28_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_3__63_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__63
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__63_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_3__63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__64_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_3__64_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__64
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_3__64_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_3__64_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_2__55_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__31
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_2__55_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_2__55_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_31.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__29
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_31. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_22 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_22.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__25
+INFO: [Physopt 32-134] Processed net CPU/dx_latch/dff27/q_reg_22. Rewiring did not optimize the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_22 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_reg_22. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__37_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_8__37
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__37_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__37_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_16 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_16.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__112
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_i_8__37_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_8__37_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_16. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.165 | TNS=-6770.487 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0_repN_3.  Did not re-place instance CPU/dx_latch/dff29/q_i_4__75_comp_3
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/new_program_counter[26]. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_1__120_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_4__75_n_0_repN_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.163 | TNS=-6770.410 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__97
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.161 | TNS=-6770.350 |
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_4__165_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_4__165_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_4__165
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_4__165_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_4__165_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_3__71_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_3__71
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_3__71_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_3__71_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__89_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__89
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_6__89_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__98
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_3__142
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_2__98_comp.
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.158 | TNS=-6750.768 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_4.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__100
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_4 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_reg_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff67/q_reg_3.  Did not re-place instance CPU/xm_latch/dff67/q_i_3__144
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_reg_4. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_2__100_comp.
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff67/q_reg_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.148 | TNS=-6751.658 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__14_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__14
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__14_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_9__7_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_9__7
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff29/q_i_12__14_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff29/q_i_12__14_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff29/q_i_9__7_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.145 | TNS=-6751.653 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_31 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_31.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__102
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_i_5__105_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_5__105_comp.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_31. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.143 | TNS=-6758.464 |
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_9__51_n_0_repN.  Did not re-place instance CPU/dx_latch/dff27/q_i_9__51_comp
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_9__51_n_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff27/q_reg_29_repN.  Re-placed instance CPU/dx_latch/dff27/q_i_2__101_replica
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_reg_29_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.137 | TNS=-6758.302 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_11 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_11.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__104
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_11 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_reg_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff71/q_reg_1.  Did not re-place instance CPU/xm_latch/dff71/q_i_3__148
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_reg_11. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_2__104_comp.
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff71/q_reg_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-11.110 | TNS=-6758.671 |
+INFO: [Common 17-14] Message 'Physopt 32-619' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__97
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_i_5__105_n_0. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_5__105_comp_1.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/MemoryArray_reg_0_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_19.  Did not re-place instance CPU/dx_latch/dff27/q_i_4__50
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_19 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_reg_19. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__30_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__30
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_i_6__30_n_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net CPU/dx_latch/dff27/q_i_6__30_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_reg_10.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__103
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_reg_10 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_reg_10. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff70/q_reg_1.  Did not re-place instance CPU/xm_latch/dff70/q_i_3__147
+INFO: [Physopt 32-710] Processed net CPU/dx_latch/dff27/q_reg_10. Critical path length was reduced through logic transformation on cell CPU/dx_latch/dff27/q_i_2__103_comp.
+INFO: [Physopt 32-735] Processed net CPU/xm_latch/dff70/q_reg_1. Optimization improves timing on the net.
+INFO: [Common 17-14] Message 'Physopt 32-735' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_9__16_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_9__16
+INFO: [Physopt 32-81] Processed net CPU/dx_latch/dff27/q_i_9__16_n_0. Replicated 1 times.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_3__142
+INFO: [Physopt 32-572] Net CPU/xm_latch/dff22/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/write_xm_latch[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net CPU/dx_latch/dff5/en0.  Re-placed instance CPU/dx_latch/dff5/q_i_2__57
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff79/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff18/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__28
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41_comp_8
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_18__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_22__8_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_21__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_22__8_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_25__1
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_80__0
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/post_shift_div[2].  Did not re-place instance CPU/dx_latch/dff27/q_i_1__25
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/post_shift_div[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_17.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__58
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__24
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_11__19
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__172
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__31
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__63
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__104
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/mw_latch/dff64/q_reg_2.  Did not re-place instance CPU/mw_latch/dff64/q_i_6__90_comp
+INFO: [Physopt 32-702] Processed net CPU/mw_latch/dff64/q_reg_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_3__142
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/write_xm_latch[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+Phase 3 Critical Path Optimization | Checksum: 199251802
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:28 . Memory (MB): peak = 2008.352 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff79/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'ProcMem/MemoryArray_reg_0' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff18/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__28
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41_comp_8
+INFO: [Physopt 32-572] Net CPU/multdiv_unit/store_div/dff6/q_reg_1 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_18__8
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_18__8_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_22__8_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_21__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_22__8_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_25__1
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_80__0
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_80__0_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/post_shift_div[2].  Did not re-place instance CPU/dx_latch/dff27/q_i_1__25
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/post_shift_div[2] was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/post_shift_div[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_reg_17 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_17.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__58
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__24
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_11__19
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff29/q_i_11__19_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__172
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_8__46_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__31
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_6__31_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__63_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__63
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__63_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__104
+INFO: [Physopt 32-572] Net CPU/dx_latch/dff27/q_i_5__104_n_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/mw_latch/dff64/q_reg_2.  Did not re-place instance CPU/mw_latch/dff64/q_i_6__90_comp
+INFO: [Physopt 32-572] Net CPU/mw_latch/dff64/q_reg_2 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/mw_latch/dff64/q_reg_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_3__142
+INFO: [Physopt 32-572] Net CPU/xm_latch/dff22/MemoryArray_reg_0_0 was not replicated.
+Resolution: phys_opt_design can be forced to replicate a net driver using the option -force_replication_on_nets <list of net objects>.
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/write_xm_latch[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff79/q_reg_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net ProcMem/dataOut[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/q_reg_i_2__9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_booths/dff18/multdiv_output[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_9__28
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_6. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1.  Did not re-place instance CPU/multdiv_unit/store_div/dff6/q_i_8__41_comp_8
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/store_div/dff6/q_reg_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_18__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_18__8_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_22__8_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_21__8
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_22__8_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_25__1
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_25__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_26_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_80__0
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_80__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/post_shift_div[2].  Did not re-place instance CPU/dx_latch/dff27/q_i_1__25
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/post_shift_div[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_reg_17.  Did not re-place instance CPU/dx_latch/dff29/q_i_3__58
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_reg_17. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_6__26
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_6__26_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_12__24
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_12__24_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0.  Did not re-place instance CPU/dx_latch/dff29/q_i_11__19
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff29/q_i_11__19_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_8__46_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_2__172
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_8__46_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_6__31
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_6__31_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__63
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__63_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0.  Did not re-place instance CPU/dx_latch/dff27/q_i_5__104
+INFO: [Physopt 32-702] Processed net CPU/dx_latch/dff27/q_i_5__104_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/mw_latch/dff64/q_reg_2.  Did not re-place instance CPU/mw_latch/dff64/q_i_6__90_comp
+INFO: [Physopt 32-702] Processed net CPU/mw_latch/dff64/q_reg_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-662] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0.  Did not re-place instance CPU/xm_latch/dff22/q_i_3__142
+INFO: [Physopt 32-702] Processed net CPU/xm_latch/dff22/MemoryArray_reg_0_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CPU/multdiv_unit/count/dff5/write_xm_latch[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ_IBUF. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net CLK100MHZ. Optimizations did not improve timing on the net.
+Phase 4 Critical Path Optimization | Checksum: 199251802
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:31 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-11.077 | TNS=-6764.732 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          1.083  |         41.687  |           16  |              0  |                   102  |           0  |           2  |  00:00:31  |
+|  Total          |          1.083  |         41.687  |           16  |              0  |                   102  |           0  |           3  |  00:00:31  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2008.352 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 128029058
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:31 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+908 Infos, 35 Warnings, 2 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:57 ; elapsed = 00:00:32 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.289 . Memory (MB): peak = 2008.352 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a100t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 7034fef2 ConstDB: 0 ShapeSum: 9709da07 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: fb75adcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2090.480 ; gain = 82.129
+Post Restoration Checksum: NetGraph: d4e82846 NumContArr: 268d8587 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: fb75adcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2090.484 ; gain = 82.133
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: fb75adcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2096.500 ; gain = 88.148
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: fb75adcd
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:16 . Memory (MB): peak = 2096.500 ; gain = 88.148
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: c52adfdc
+
+Time (s): cpu = 00:00:20 ; elapsed = 00:00:17 . Memory (MB): peak = 2125.902 ; gain = 117.551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-10.835| TNS=-6339.014| WHS=-0.480 | THS=-62.803|
+
+Phase 2 Router Initialization | Checksum: d8aa2d6e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2125.902 ; gain = 117.551
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000217609 %
+  Global Horizontal Routing Utilization  = 0.000284172 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 4312
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 4304
+  Number of Partially Routed Nets     = 8
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: d8aa2d6e
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 2125.902 ; gain = 117.551
+Phase 3 Initial Routing | Checksum: 23c5cee9a
+
+Time (s): cpu = 00:00:23 ; elapsed = 00:00:18 . Memory (MB): peak = 2125.902 ; gain = 117.551
+INFO: [Route 35-580] Design has 60 pins with tight setup and hold constraints.
+
+The top 5 pins with tight setup and hold constraints:
+
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|              sys_clk_pin |              sys_clk_pin |                                                                                CPU/xm_latch/dff76/q_reg/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                CPU/xm_latch/dff72/q_reg/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                CPU/xm_latch/dff64/q_reg/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                CPU/xm_latch/dff74/q_reg/D|
+|              sys_clk_pin |              sys_clk_pin |                                                                                CPU/xm_latch/dff87/q_reg/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+
+File with complete list of pins: tight_setup_hold_pins.txt
+
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 1331
+ Number of Nodes with overlaps = 362
+ Number of Nodes with overlaps = 150
+ Number of Nodes with overlaps = 84
+ Number of Nodes with overlaps = 45
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 13
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.363| TNS=-10904.530| WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 20c1a3e2f
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:25 . Memory (MB): peak = 2125.902 ; gain = 117.551
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 611
+ Number of Nodes with overlaps = 329
+ Number of Nodes with overlaps = 121
+ Number of Nodes with overlaps = 55
+ Number of Nodes with overlaps = 38
+ Number of Nodes with overlaps = 17
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.094| TNS=-11004.227| WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 19d7f7493
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:31 . Memory (MB): peak = 2125.902 ; gain = 117.551
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 510
+ Number of Nodes with overlaps = 251
+ Number of Nodes with overlaps = 86
+ Number of Nodes with overlaps = 44
+ Number of Nodes with overlaps = 10
+ Number of Nodes with overlaps = 15
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.408| TNS=-10866.851| WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1934a461d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 2125.902 ; gain = 117.551
+Phase 4 Rip-up And Reroute | Checksum: 1934a461d
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:36 . Memory (MB): peak = 2125.902 ; gain = 117.551
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 209a1d479
+
+Time (s): cpu = 00:00:46 ; elapsed = 00:00:37 . Memory (MB): peak = 2125.902 ; gain = 117.551
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.007| TNS=-10901.807| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 1127c3894
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1127c3894
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 2131.777 ; gain = 123.426
+Phase 5 Delay and Skew Optimization | Checksum: 1127c3894
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:37 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 19a80f6e8
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.006| TNS=-10353.130| WHS=-0.480 | THS=-58.367|
+
+
+Phase 6.1.2 Lut RouteThru Assignment for hold
+Phase 6.1.2 Lut RouteThru Assignment for hold | Checksum: 1339b8fae
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+Phase 6.1 Hold Fix Iter | Checksum: 1339b8fae
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 6.2 Additional Hold Fix
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-12.006| TNS=-10353.130| WHS=-0.480 | THS=-58.367|
+
+Phase 6.2 Additional Hold Fix | Checksum: 16a3d0cb0
+
+Time (s): cpu = 00:00:48 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+Phase 6 Post Hold Fix | Checksum: 11a3bcafc
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.49506 %
+  Global Horizontal Routing Utilization  = 1.58184 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 59.4595%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 78.3784%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 73.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 66.1765%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 7 Route finalize | Checksum: 202f2b33b
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 202f2b33b
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:38 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 263bcb979
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 2131.777 ; gain = 123.426
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff43/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff49/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff57/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff32/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff34/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff36/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff51/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff54/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff61/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff62/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff47/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff40/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff42/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff56/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff59/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff60/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff61/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff1/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff10/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff11/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff16/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff17/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff18/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff28/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff3/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff42/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff7/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff10/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff11/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff12/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff37/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff4/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff44/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff53/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff54/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff55/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff14/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff21/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff23/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff27/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff32/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff36/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff40/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff44/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff58/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff6/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff60/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff15/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff16/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff18/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff20/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff23/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff25/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff27/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff30/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff33/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff39/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff45/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff46/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_div/dff47/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff33/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff34/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff45/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff46/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff56/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff64/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff50/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff52/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+WARNING: [Route 35-419] Router was unable to fix hold violation on pin CPU/multdiv_unit/store_booths/dff55/q_reg/CE driven by global clock buffer BUFGCTRL_X0Y16.
+Resolution: Run report_timing_summary to analyze the hold violations.
+
+Phase 10 Post Router Timing
+
+Phase 10.1 Update Timing
+Phase 10.1 Update Timing | Checksum: 1fc84cd4c
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 2131.777 ; gain = 123.426
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-12.006| TNS=-10353.130| WHS=-0.480 | THS=-58.367|
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 10 Post Router Timing | Checksum: 1fc84cd4c
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 2131.777 ; gain = 123.426
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:39 . Memory (MB): peak = 2131.777 ; gain = 123.426
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+929 Infos, 107 Warnings, 2 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:40 . Memory (MB): peak = 2131.777 ; gain = 123.426
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.370 . Memory (MB): peak = 2131.777 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file Wrapper_drc_routed.rpt -pb Wrapper_drc_routed.pb -rpx Wrapper_drc_routed.rpx
+Command: report_drc -file Wrapper_drc_routed.rpt -pb Wrapper_drc_routed.pb -rpx Wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file Wrapper_methodology_drc_routed.rpt -pb Wrapper_methodology_drc_routed.pb -rpx Wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file Wrapper_methodology_drc_routed.rpt -pb Wrapper_methodology_drc_routed.pb -rpx Wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/ah632/ece350/whack-a-mole/vivado-whack-a-mole/vivado-whack-a-mole.runs/impl_1/Wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file Wrapper_power_routed.rpt -pb Wrapper_power_summary_routed.pb -rpx Wrapper_power_routed.rpx
+Command: report_power -file Wrapper_power_routed.rpt -pb Wrapper_power_summary_routed.pb -rpx Wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+941 Infos, 107 Warnings, 2 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file Wrapper_route_status.rpt -pb Wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file Wrapper_timing_summary_routed.rpt -pb Wrapper_timing_summary_routed.pb -rpx Wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file Wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file Wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file Wrapper_bus_skew_routed.rpt -pb Wrapper_bus_skew_routed.pb -rpx Wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Thu Apr 18 13:19:20 2024...

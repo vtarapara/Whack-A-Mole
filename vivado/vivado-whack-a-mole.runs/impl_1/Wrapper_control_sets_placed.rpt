@@ -1,0 +1,118 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Thu Apr 18 13:41:51 2024
+| Host         : P1-08 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Wrapper_control_sets_placed.rpt
+| Design       : Wrapper
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    40 |
+|    Minimum number of control sets                        |    40 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   142 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    40 |
+| >= 0 to < 4        |    10 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    28 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               3 |            3 |
+| No           | No                    | Yes                    |             101 |           72 |
+| No           | Yes                   | No                     |               6 |            2 |
+| Yes          | No                    | No                     |              82 |           45 |
+| Yes          | No                    | Yes                    |             917 |          384 |
+| Yes          | Yes                   | No                     |              45 |           28 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------------------------------+------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|                 Clock Signal                |               Enable Signal              |            Set/Reset Signal            | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------------------------------+------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+|  CPU/multdiv_unit/count/dff3/counter_out[0] |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+|  CPU/multdiv_unit/count/dff4/counter_out[0] |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+|  CPU/multdiv_unit/count/dff0/counter_out[0] |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+|  CPU/multdiv_unit/count/dff2/counter_out[0] |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+|  CPU/multdiv_unit/count/dff1/counter_out[0] |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+| ~CPU/hole/dff0/mole_spawn_hole[0]           |                                          | RegisterFile/register31/dff31/BT_RESET |                1 |              1 |         1.00 |
+| ~CPU/hole/dff1/mole_spawn_hole[0]           |                                          | RegisterFile/register31/dff31/BT_RESET |                1 |              1 |         1.00 |
+|  clk_desired_BUFG                           |                                          | CPU/dx_latch/dff5/en0                  |                1 |              1 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG                        |                                          |                                        |                1 |              1 |         1.00 |
+|  clk_desired_BUFG                           |                                          |                                        |                2 |              2 |         1.00 |
+|  CLK100MHZ_IBUF_BUFG                        |                                          | clear                                  |                2 |              6 |         3.00 |
+|  clk_desired_BUFG                           |                                          | RegisterFile/register31/dff31/BT_RESET |                3 |              8 |         2.67 |
+|  clk_desired_BUFG                           | clk_desired_BUFG                         | CPU/dx_latch/dff5/clk_desired_reg      |               10 |             16 |         1.60 |
+|  clk_desired_BUFG                           | clk_desired_BUFG                         | CPU/dx_latch/dff5/clk_desired_reg_0    |               18 |             29 |         1.61 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_18    | RegisterFile/register31/dff31/BT_RESET |               30 |             32 |         1.07 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_19    | RegisterFile/register31/dff31/BT_RESET |               16 |             32 |         2.00 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_2     | RegisterFile/register31/dff31/BT_RESET |               17 |             32 |         1.88 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_30    | RegisterFile/register31/dff31/BT_RESET |               10 |             32 |         3.20 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_31    | RegisterFile/register31/dff31/BT_RESET |               13 |             32 |         2.46 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_9     | RegisterFile/register31/dff31/BT_RESET |               15 |             32 |         2.13 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_3     | RegisterFile/register31/dff31/BT_RESET |                9 |             32 |         3.56 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_8     | RegisterFile/register31/dff31/BT_RESET |               10 |             32 |         3.20 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_28    | RegisterFile/register31/dff31/BT_RESET |               25 |             32 |         1.28 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_4     | RegisterFile/register31/dff31/BT_RESET |                7 |             32 |         4.57 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_29    | RegisterFile/register31/dff31/BT_RESET |               10 |             32 |         3.20 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_7     | RegisterFile/register31/dff31/BT_RESET |               12 |             32 |         2.67 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_6     | RegisterFile/register31/dff31/BT_RESET |                7 |             32 |         4.57 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_5     | RegisterFile/register31/dff31/BT_RESET |                8 |             32 |         4.00 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_22    | RegisterFile/register31/dff31/BT_RESET |               11 |             33 |         3.00 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_20    | RegisterFile/register31/dff31/BT_RESET |               10 |             33 |         3.30 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_21    | RegisterFile/register31/dff31/BT_RESET |               13 |             33 |         2.54 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_23    | RegisterFile/register31/dff31/BT_RESET |               15 |             33 |         2.20 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_24    | RegisterFile/register31/dff31/BT_RESET |               10 |             33 |         3.30 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_25    | RegisterFile/register31/dff31/BT_RESET |               10 |             33 |         3.30 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_26    | RegisterFile/register31/dff31/BT_RESET |               10 |             33 |         3.30 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_27    | RegisterFile/register31/dff31/BT_RESET |               16 |             33 |         2.06 |
+|  clk_desired_BUFG                           | CPU/mw_latch/dff28/ctrl_writeLabel_1     | RegisterFile/register31/dff31/BT_RESET |               22 |             40 |         1.82 |
+|  clk_desired_BUFG                           | clk_desired_BUFG                         |                                        |               45 |             82 |         1.82 |
+| ~clk_desired_BUFG                           |                                          | RegisterFile/register31/dff31/BT_RESET |               61 |             85 |         1.39 |
+| ~clk_desired_BUFG                           | CPU/multdiv_unit/count/dff5/q_i_3__171_0 | RegisterFile/register31/dff31/BT_RESET |               78 |            165 |         2.12 |
++---------------------------------------------+------------------------------------------+----------------------------------------+------------------+----------------+--------------+
+
+
