@@ -1,5 +1,5 @@
 # whack-a-mole
-ece350 final project
+ECE350 Final Project - 
 # Whack-A-Mole
 ### Group Members
 - Aaron Hsu
