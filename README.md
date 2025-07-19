@@ -1,6 +1,5 @@
-# whack-a-mole
-ECE350 Final Project - 
 # Whack-A-Mole
+ECE350 Final Project
 ### Group Members
 - Aaron Hsu
 - Vivek Tarapara
